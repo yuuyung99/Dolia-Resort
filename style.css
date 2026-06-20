@@ -643,6 +643,56 @@ body {
 ::placeholder {
     color: #A29C95;
 }
+.date-group {
+    position: relative;
+}
+    .date-group i {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #C9A46A;
+        pointer-events: none;
+        font-size: 18px;
+    }
+    .date-group input {
+        padding-right: 55px;
+    }
+    .date-group i {
+        display: none;
+    }
+@media(max-width:768px) {
+
+    .date-group {
+        position: relative;
+    }
+
+        .date-group i {
+            display: block;
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #C9A46A;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+    .date-group input {
+        padding-right: 50px;
+    }
+}
+@media(max-width:768px) {
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+}
 .submit-btn {
     width: 100%;
     border: none;
@@ -686,8 +736,7 @@ body {
     height: 58px;
     padding: 0 18px;
     box-sizing: border-box;
-    -webkit-appearance: none;
-    appearance: none;
+    
 }
 @media(max-width:768px) {
 
@@ -702,6 +751,7 @@ body {
         padding: 30px 20px;
     }
 }
+
 /*===POPUP ĐĂNG KÝ THÀNH CÔNG====*/
 .success-modal {
     position: fixed;
