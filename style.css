@@ -625,7 +625,7 @@ body {
         border: 1px solid #E7DED4;
         border-radius: 14px;
         background: white;
-        font-size: 15px;
+        font-size: 16px;
         color: #2D2A26;
         outline: none;
         transition: .3s;
@@ -2041,7 +2041,7 @@ input,
 select,
 textarea,
 button {
-    font-size: 16px;
+    font-size: 16px !important ;
 }
 
 
