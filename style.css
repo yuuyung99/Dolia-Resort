@@ -736,7 +736,8 @@ body {
     height: 58px;
     padding: 0 18px;
     box-sizing: border-box;
-    
+    -webkit-appearance: none;
+    appearance: none;
 }
 @media(max-width:768px) {
 
